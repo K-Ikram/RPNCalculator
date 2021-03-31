@@ -5,4 +5,3 @@
   - Suppression en casscade de la pile et ses opérations.
   - Ajout de plus de tests unitaire et d'intégration.
   - Ajout des exceptions personnalisées.
-  - Sécuriser l'API avec le protocole HTTPS.
