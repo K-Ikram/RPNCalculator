@@ -23,7 +23,7 @@ namespace RPNCalculator.Controllers
         }
        
         /// <summary>
-        /// List all the operands
+        /// List all the operations
         /// </summary>
         /// <returns></returns>
         [HttpGet]

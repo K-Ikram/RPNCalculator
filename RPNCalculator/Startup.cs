@@ -38,8 +38,9 @@ namespace RPNCalculator
                  c.SwaggerDoc("v1",
                 new OpenApiInfo
                     {
-                        Title = "My API - V1",
+                        Title = "My RPN Calculator -v1",
                         Version = "v1"
+                        
                     }
                 );
 
