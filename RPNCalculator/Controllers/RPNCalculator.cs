@@ -31,7 +31,7 @@ namespace RPNCalculator.Controllers
         public ActionResult<Stack<string>> GetAllOperands()
         {
             if(ModelState.IsValid){
-                return _calculatorService.GetAllOperands();
+                return Ok(_calculatorService.GetAllOperands());
             }
             return BadRequest(ModelState);
         }
@@ -47,7 +47,7 @@ namespace RPNCalculator.Controllers
         {
           if(ModelState.IsValid)
           {
-              return _calculatorService.GetAllStacks();
+              return Ok(_calculatorService.GetAllStacks());
           }        
             
             return BadRequest(ModelState);
@@ -55,7 +55,7 @@ namespace RPNCalculator.Controllers
         }
 
         /// <summary>
-        /// Apply an string to a stack
+        /// Apply an operand to a stack
         /// </summary>
         /// <returns></returns>
 
@@ -65,7 +65,7 @@ namespace RPNCalculator.Controllers
          {
             if(ModelState.IsValid)
             {
-                return _calculatorService.ApplyOperandToStack(op, stackid);
+                return Ok(_calculatorService.ApplyOperandToStack(op, stackid));
 
             }
             return BadRequest(ModelState);
@@ -84,7 +84,7 @@ namespace RPNCalculator.Controllers
         {            
            if(ModelState.IsValid) 
            {
-               return  _calculatorService.CreateNewStack(stack);
+               return  Ok(_calculatorService.CreateNewStack(stack));
 
            }
 
@@ -122,7 +122,7 @@ namespace RPNCalculator.Controllers
         {
             if(ModelState.IsValid)
             {
-                return _calculatorService.AddNewValueToStack(stackid,value.value);
+                return Ok(_calculatorService.AddNewValueToStack(stackid,value.value));
             }
             
             return BadRequest(ModelState);
